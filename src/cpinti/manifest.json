@@ -1,0 +1,13 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "id": "cpinti",
+    "description": "The Cpcdos C++ library",
+    "type": "lib",
+    "requires": [
+        "cpp-core",
+        "cpp-debug",
+        "cpp-fs",
+        "cpp-io",
+        "cpp-network"
+    ]
+}

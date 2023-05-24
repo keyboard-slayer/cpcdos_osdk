@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "id": "cpp-core",
+    "description": "Core of the CPinti",
+    "type": "lib",
+    "requires": [
+        "cpp-memory"
+    ]
+}

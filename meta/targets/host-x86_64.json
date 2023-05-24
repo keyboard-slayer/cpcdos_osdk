@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schemas.cute.engineering/latest/osdk.manifest.component",
+    "id": "host-x86_64",
+    "type": "target",
+    "props": {
+        "arch": "x86_64",
+        "toolchain": "clang",
+        "sys": [
+            "@uname",
+            "sysname"
+        ],
+        "abi": "unknown",
+        "freestanding": false,
+        "host": true
+    },
+    "tools": {
+        "cc": {
+            "cmd": [
+                "@latest",
+                "clang"
+            ],
+            "args": []
+        },
+        "cxx": {
+            "cmd": [
+                "@latest",
+                "clang++"
+            ],
+            "args": [
+                "-Isrc/cpinti/includes"
+            ]
+        },
+        "ld": {
+            "cmd": [
+                "@latest",
+                "clang++"
+            ],
+            "args": [
+                "/usr/local/lib/freebasic/linux-x86_64/libfb.a",
+                "/usr/local/lib/freebasic/linux-x86_64/libfbgfx.a",
+                "-lX11",
+                "-lXrandr",
+                "-lXext",
+                "-lXpm",
+                "-lncurses",
+                "-ldl",
+                "-lz",
+                "-lzip",
+                "-lpng",
+                "-lpthread",
+                "-lstdc++"
+            ]
+        },
+        "ar": {
+            "cmd": [
+                "@latest",
+                "llvm-ar"
+            ],
+            "args": [
+                "rcs"
+            ]
+        },
+        "as": {
+            "cmd": [
+                "@latest",
+                "clang"
+            ],
+            "args": [
+                "-c"
+            ]
+        },
+        "fbc": {
+            "cmd": "fbc",
+            "args": [
+                "-target linux-x86_64",
+                "-i ./src/cpcdos/includes"
+            ]
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "type": "project",
+    "id": "SPinti-Software/CpcdosOS2.1",
+    "description": "Create your own operating system with CpcdosOS"
+}

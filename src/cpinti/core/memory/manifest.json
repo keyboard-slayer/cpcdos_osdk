@@ -1,0 +1,6 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "id": "cpp-memory",
+    "description": "Memory component of the core",
+    "type": "lib"
+}

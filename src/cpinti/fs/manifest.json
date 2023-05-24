@@ -1,0 +1,6 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "id": "cpp-fs",
+    "description": "Filesystem library for CPinti",
+    "type": "lib"
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/osdk.manifest.component.v1",
+    "id": "cpcdos",
+    "description": "The Cpcdos co-kernel (Written in Freebasic)",
+    "type": "exe",
+    "requires": [
+        "fb-core",
+        "fb-debug",
+        "fb-gui",
+        "fb-lang",
+        "fb-network",
+        "cpinti"
+    ]
+}
